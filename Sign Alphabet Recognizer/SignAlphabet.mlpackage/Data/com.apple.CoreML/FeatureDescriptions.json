@@ -1,0 +1,18 @@
+{
+  "Outputs" : {
+    "label" : {
+      "MLFeatureShortDescription" : "Most likely hand pose category."
+    },
+    "labelProbabilities" : {
+      "MLFeatureShortDescription" : "A dictionary of labels and the corresponding confidences."
+    }
+  },
+  "Inputs" : {
+    "poses" : {
+      "MLFeatureShortDescription" : "A hand pose to classify. Its multiarray encoding uses the first dimension to index time over 1 frame. The second dimension indexes x, y, and confidence of hand pose keypoint locations. The last dimension indexes the keypoint type, ordered as wrist, thumbCMC, thumbMP, thumbIP, thumbTip, indexMCP, indexPIP, indexDIP, indexTip, middleMCP, middlePIP, middleDIP, middleTip, ringMCP, ringPIP, ringDIP, ringTip, littleMCP, littlePIP, littleDIP, littleTip."
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}
