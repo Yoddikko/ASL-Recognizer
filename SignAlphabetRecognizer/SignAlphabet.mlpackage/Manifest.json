@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "2E696260-9EE7-4EA5-9CD0-4EAB3C791068": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "SignAlphabet.mlmodel",
+            "path": "com.apple.CoreML/SignAlphabet.mlmodel"
+        },
+        "FC860CF6-B7CD-4939-AB34-28347E32B8E3": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "FECBC23D-A858-4C37-B7F1-9B15E9FB24EF": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        }
+    },
+    "rootModelIdentifier": "2E696260-9EE7-4EA5-9CD0-4EAB3C791068"
+}

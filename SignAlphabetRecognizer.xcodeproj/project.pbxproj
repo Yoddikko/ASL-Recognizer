@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		718E55AA27F4A97500FB482C /* SignAlphabetRecognizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55A927F4A97500FB482C /* SignAlphabetRecognizerApp.swift */; };
+		718E55AC27F4A97500FB482C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55AB27F4A97500FB482C /* ContentView.swift */; };
+		718E55AE27F4A97600FB482C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718E55AD27F4A97600FB482C /* Assets.xcassets */; };
+		718E55B127F4A97600FB482C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718E55B027F4A97600FB482C /* Preview Assets.xcassets */; };
+		718E55BB27F4A97600FB482C /* SignAlphabetRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55BA27F4A97600FB482C /* SignAlphabetRecognizerTests.swift */; };
+		718E55C527F4A97600FB482C /* SignAlphabetRecognizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55C427F4A97600FB482C /* SignAlphabetRecognizerUITests.swift */; };
+		718E55C727F4A97600FB482C /* SignAlphabetRecognizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55C627F4A97600FB482C /* SignAlphabetRecognizerUITestsLaunchTests.swift */; };
+		718E55DE27F4B19D00FB482C /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55DD27F4B19D00FB482C /* ImagePickerView.swift */; };
+		718E55E027F58AAC00FB482C /* SUImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55DF27F58AAC00FB482C /* SUImagePicker.swift */; };
+		718E55E227F58C9600FB482C /* UIImage+Resize+CVPixelBuffer .swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55E127F58C9600FB482C /* UIImage+Resize+CVPixelBuffer .swift */; };
+		71AD3BFC27F7414B000571FB /* SignAlphabet.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 71AD3BFB27F7414B000571FB /* SignAlphabet.mlpackage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		718E55B727F4A97600FB482C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 718E559E27F4A97400FB482C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 718E55A527F4A97500FB482C;
+			remoteInfo = SignAlphabetRecognizer;
+		};
+		718E55C127F4A97600FB482C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 718E559E27F4A97400FB482C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 718E55A527F4A97500FB482C;
+			remoteInfo = SignAlphabetRecognizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		718E55A627F4A97500FB482C /* SignAlphabetRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignAlphabetRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		718E55A927F4A97500FB482C /* SignAlphabetRecognizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAlphabetRecognizerApp.swift; sourceTree = "<group>"; };
+		718E55AB27F4A97500FB482C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		718E55AD27F4A97600FB482C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		718E55B027F4A97600FB482C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		718E55B627F4A97600FB482C /* SignAlphabetRecognizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignAlphabetRecognizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		718E55BA27F4A97600FB482C /* SignAlphabetRecognizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAlphabetRecognizerTests.swift; sourceTree = "<group>"; };
+		718E55C027F4A97600FB482C /* SignAlphabetRecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignAlphabetRecognizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		718E55C427F4A97600FB482C /* SignAlphabetRecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAlphabetRecognizerUITests.swift; sourceTree = "<group>"; };
+		718E55C627F4A97600FB482C /* SignAlphabetRecognizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAlphabetRecognizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		718E55DD27F4B19D00FB482C /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		718E55DF27F58AAC00FB482C /* SUImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePicker.swift; sourceTree = "<group>"; };
+		718E55E127F58C9600FB482C /* UIImage+Resize+CVPixelBuffer .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize+CVPixelBuffer .swift"; sourceTree = "<group>"; };
+		71AD3BFB27F7414B000571FB /* SignAlphabet.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = SignAlphabet.mlpackage; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		718E55A327F4A97500FB482C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E55B327F4A97600FB482C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E55BD27F4A97600FB482C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		718E559D27F4A97400FB482C = {
+			isa = PBXGroup;
+			children = (
+				718E55A827F4A97500FB482C /* SignAlphabetRecognizer */,
+				718E55B927F4A97600FB482C /* SignAlphabetRecognizerTests */,
+				718E55C327F4A97600FB482C /* SignAlphabetRecognizerUITests */,
+				718E55A727F4A97500FB482C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		718E55A727F4A97500FB482C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				718E55A627F4A97500FB482C /* SignAlphabetRecognizer.app */,
+				718E55B627F4A97600FB482C /* SignAlphabetRecognizerTests.xctest */,
+				718E55C027F4A97600FB482C /* SignAlphabetRecognizerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		718E55A827F4A97500FB482C /* SignAlphabetRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				718E55A927F4A97500FB482C /* SignAlphabetRecognizerApp.swift */,
+				718E55AB27F4A97500FB482C /* ContentView.swift */,
+				718E55DF27F58AAC00FB482C /* SUImagePicker.swift */,
+				718E55DD27F4B19D00FB482C /* ImagePickerView.swift */,
+				71AD3BFB27F7414B000571FB /* SignAlphabet.mlpackage */,
+				718E55E127F58C9600FB482C /* UIImage+Resize+CVPixelBuffer .swift */,
+				718E55AD27F4A97600FB482C /* Assets.xcassets */,
+				718E55AF27F4A97600FB482C /* Preview Content */,
+			);
+			path = SignAlphabetRecognizer;
+			sourceTree = "<group>";
+		};
+		718E55AF27F4A97600FB482C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				718E55B027F4A97600FB482C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		718E55B927F4A97600FB482C /* SignAlphabetRecognizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				718E55BA27F4A97600FB482C /* SignAlphabetRecognizerTests.swift */,
+			);
+			path = SignAlphabetRecognizerTests;
+			sourceTree = "<group>";
+		};
+		718E55C327F4A97600FB482C /* SignAlphabetRecognizerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				718E55C427F4A97600FB482C /* SignAlphabetRecognizerUITests.swift */,
+				718E55C627F4A97600FB482C /* SignAlphabetRecognizerUITestsLaunchTests.swift */,
+			);
+			path = SignAlphabetRecognizerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		718E55A527F4A97500FB482C /* SignAlphabetRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718E55CA27F4A97600FB482C /* Build configuration list for PBXNativeTarget "SignAlphabetRecognizer" */;
+			buildPhases = (
+				718E55A227F4A97500FB482C /* Sources */,
+				718E55A327F4A97500FB482C /* Frameworks */,
+				718E55A427F4A97500FB482C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignAlphabetRecognizer;
+			productName = SignAlphabetRecognizer;
+			productReference = 718E55A627F4A97500FB482C /* SignAlphabetRecognizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		718E55B527F4A97600FB482C /* SignAlphabetRecognizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718E55CD27F4A97600FB482C /* Build configuration list for PBXNativeTarget "SignAlphabetRecognizerTests" */;
+			buildPhases = (
+				718E55B227F4A97600FB482C /* Sources */,
+				718E55B327F4A97600FB482C /* Frameworks */,
+				718E55B427F4A97600FB482C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				718E55B827F4A97600FB482C /* PBXTargetDependency */,
+			);
+			name = SignAlphabetRecognizerTests;
+			productName = SignAlphabetRecognizerTests;
+			productReference = 718E55B627F4A97600FB482C /* SignAlphabetRecognizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		718E55BF27F4A97600FB482C /* SignAlphabetRecognizerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718E55D027F4A97600FB482C /* Build configuration list for PBXNativeTarget "SignAlphabetRecognizerUITests" */;
+			buildPhases = (
+				718E55BC27F4A97600FB482C /* Sources */,
+				718E55BD27F4A97600FB482C /* Frameworks */,
+				718E55BE27F4A97600FB482C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				718E55C227F4A97600FB482C /* PBXTargetDependency */,
+			);
+			name = SignAlphabetRecognizerUITests;
+			productName = SignAlphabetRecognizerUITests;
+			productReference = 718E55C027F4A97600FB482C /* SignAlphabetRecognizerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		718E559E27F4A97400FB482C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					718E55A527F4A97500FB482C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					718E55B527F4A97600FB482C = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 718E55A527F4A97500FB482C;
+					};
+					718E55BF27F4A97600FB482C = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 718E55A527F4A97500FB482C;
+					};
+				};
+			};
+			buildConfigurationList = 718E55A127F4A97400FB482C /* Build configuration list for PBXProject "SignAlphabetRecognizer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 718E559D27F4A97400FB482C;
+			productRefGroup = 718E55A727F4A97500FB482C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				718E55A527F4A97500FB482C /* SignAlphabetRecognizer */,
+				718E55B527F4A97600FB482C /* SignAlphabetRecognizerTests */,
+				718E55BF27F4A97600FB482C /* SignAlphabetRecognizerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		718E55A427F4A97500FB482C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718E55B127F4A97600FB482C /* Preview Assets.xcassets in Resources */,
+				718E55AE27F4A97600FB482C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E55B427F4A97600FB482C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E55BE27F4A97600FB482C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		718E55A227F4A97500FB482C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718E55E227F58C9600FB482C /* UIImage+Resize+CVPixelBuffer .swift in Sources */,
+				718E55AC27F4A97500FB482C /* ContentView.swift in Sources */,
+				718E55AA27F4A97500FB482C /* SignAlphabetRecognizerApp.swift in Sources */,
+				71AD3BFC27F7414B000571FB /* SignAlphabet.mlpackage in Sources */,
+				718E55DE27F4B19D00FB482C /* ImagePickerView.swift in Sources */,
+				718E55E027F58AAC00FB482C /* SUImagePicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E55B227F4A97600FB482C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718E55BB27F4A97600FB482C /* SignAlphabetRecognizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E55BC27F4A97600FB482C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718E55C727F4A97600FB482C /* SignAlphabetRecognizerUITestsLaunchTests.swift in Sources */,
+				718E55C527F4A97600FB482C /* SignAlphabetRecognizerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		718E55B827F4A97600FB482C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 718E55A527F4A97500FB482C /* SignAlphabetRecognizer */;
+			targetProxy = 718E55B727F4A97600FB482C /* PBXContainerItemProxy */;
+		};
+		718E55C227F4A97600FB482C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 718E55A527F4A97500FB482C /* SignAlphabetRecognizer */;
+			targetProxy = 718E55C127F4A97600FB482C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		718E55C827F4A97600FB482C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		718E55C927F4A97600FB482C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		718E55CB27F4A97600FB482C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignAlphabetRecognizer/Preview Content\"";
+				DEVELOPMENT_TEAM = AH7YQ86734;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "si mi serve la camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alex.SignAlphabetRecognizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		718E55CC27F4A97600FB482C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignAlphabetRecognizer/Preview Content\"";
+				DEVELOPMENT_TEAM = AH7YQ86734;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "si mi serve la camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alex.SignAlphabetRecognizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		718E55CE27F4A97600FB482C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AH7YQ86734;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ale.SignAlphabetRecognizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignAlphabetRecognizer.app/SignAlphabetRecognizer";
+			};
+			name = Debug;
+		};
+		718E55CF27F4A97600FB482C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AH7YQ86734;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ale.SignAlphabetRecognizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignAlphabetRecognizer.app/SignAlphabetRecognizer";
+			};
+			name = Release;
+		};
+		718E55D127F4A97600FB482C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AH7YQ86734;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ale.SignAlphabetRecognizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SignAlphabetRecognizer;
+			};
+			name = Debug;
+		};
+		718E55D227F4A97600FB482C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AH7YQ86734;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ale.SignAlphabetRecognizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SignAlphabetRecognizer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		718E55A127F4A97400FB482C /* Build configuration list for PBXProject "SignAlphabetRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718E55C827F4A97600FB482C /* Debug */,
+				718E55C927F4A97600FB482C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718E55CA27F4A97600FB482C /* Build configuration list for PBXNativeTarget "SignAlphabetRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718E55CB27F4A97600FB482C /* Debug */,
+				718E55CC27F4A97600FB482C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718E55CD27F4A97600FB482C /* Build configuration list for PBXNativeTarget "SignAlphabetRecognizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718E55CE27F4A97600FB482C /* Debug */,
+				718E55CF27F4A97600FB482C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718E55D027F4A97600FB482C /* Build configuration list for PBXNativeTarget "SignAlphabetRecognizerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718E55D127F4A97600FB482C /* Debug */,
+				718E55D227F4A97600FB482C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 718E559E27F4A97400FB482C /* Project object */;
+}
