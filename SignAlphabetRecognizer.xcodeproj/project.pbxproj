@@ -104,7 +104,6 @@
 		718E559D27F4A97400FB482C = {
 			isa = PBXGroup;
 			children = (
-				710ABA6227FB2AF90056DDAC /* CGImage Extension.swift */,
 				718E55A827F4A97500FB482C /* SignAlphabetRecognizer */,
 				718E55B927F4A97600FB482C /* SignAlphabetRecognizerTests */,
 				718E55C327F4A97600FB482C /* SignAlphabetRecognizerUITests */,
@@ -125,6 +124,7 @@
 		718E55A827F4A97500FB482C /* SignAlphabetRecognizer */ = {
 			isa = PBXGroup;
 			children = (
+				710ABA6227FB2AF90056DDAC /* CGImage Extension.swift */,
 				718E55A927F4A97500FB482C /* SignAlphabetRecognizerApp.swift */,
 				718E55AB27F4A97500FB482C /* ContentView.swift */,
 				718E55DF27F58AAC00FB482C /* SUImagePicker.swift */,

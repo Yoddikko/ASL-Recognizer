@@ -12,7 +12,7 @@ struct HomeView: View {
         NavigationView {
         VStack {
             HStack {
-//                Spacer()
+                Spacer() 
             Text("ASL recognizer")
                 .font(.largeTitle)
                 .padding()

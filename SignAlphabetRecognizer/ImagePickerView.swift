@@ -67,6 +67,10 @@ struct ImagePickerView: View {
             Button("Classify!") { classificationViewModel.classifyImage(tmpImage: image!)
                 print(classificationViewModel.classificationLabel)
             }
+            .onAppear{
+                classificationViewModel.classificationLabel = ""
+                classificationViewModel.name = ""
+            }
                 RoundedRectangle(cornerRadius: 15).foregroundColor(.gray).opacity(0.2).padding().frame(width: 120, height: 70)
 
             }

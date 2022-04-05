@@ -11,8 +11,10 @@ struct LiveCameraView: View {
     @StateObject private var model = ContentViewModel()
     
     @EnvironmentObject var classificationViewModel: ClassificationViewModel
+
     var truevar = true
     var body: some View {
+        
         VStack {
             ZStack {
                 FrameView(image: model.frame)
@@ -25,6 +27,10 @@ struct LiveCameraView: View {
                         .foregroundColor(.gray)
                         .opacity(0.2)
                         .frame(width: 200, height: 30)
+                        .onAppear{
+                            classificationViewModel.classificationLabel = ""
+                            classificationViewModel.name = ""
+                        }
                     
                 }
                 HStack {
