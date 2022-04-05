@@ -12,7 +12,5 @@ The computer trained the model for about 24h and I got pretty accurate results.
 Once the model had finished training I implemented it in Swift, creating a project that received in UIImage processes it with the model and shows the result on screen.  The code is open-source and available on GitHub.
 ###### The frameworks I used
 I used AVFoundation as the first framework to start recording in real time and receive frames from the camera. After that, the frames I was receiving from the camera were processed using the model created with machine learning and using the vision framework. Then the whole UI is built using SwiftUI.
-![IMG_0128 PNG](https://user-images.githubusercontent.com/92546954/161829924-a3a16eb7-85c6-4b8f-b455-cb8e16d94fba.png)
-![frameworks 001](https://user-images.githubusercontent.com/92546954/161829686-2c15135f-0ce7-4276-87c6-18e79948a1a2.png)
-![ios-marketing](https://user-images.githubusercontent.com/92546954/161829907-7defba7a-3651-450d-9b94-f64a5c29d9e5.png)
-![IMG_0127 PNG](https://user-images.githubusercontent.com/92546954/161829912-c25b8b79-37e2-480a-a38b-3aea1dd80f08.png)
+
+![frameworks 001](https://user-images.githubusercontent.com/92546954/161830210-2d2e61e1-f042-4be1-b0d7-22e2a63a925f.png)
