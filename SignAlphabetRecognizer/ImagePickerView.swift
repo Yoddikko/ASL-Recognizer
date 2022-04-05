@@ -7,23 +7,39 @@
 //
 import SwiftUI
 import Vision
+import AVFoundation
+import UIKit
+import CoreImage
 
 
 struct ImagePickerView: View {
-    @State private var classificationLabel: String = ""
-    @State private var name: String = ""
-    let model = SignAlphabet()
     
+    @EnvironmentObject var classificationViewModel: ClassificationViewModel
+
+    var localClassificationLabel = ""
+    
+//    @State private var classificationLabel: String = ""
+//    @State private var name: String = ""
+    let mlmodel = SignAlphabet()
     
     @State private var image: UIImage? = UIImage(named: "prova")
     @State private var shouldPresentImagePicker = false
     @State private var shouldPresentActionScheet = false
     @State private var shouldPresentCamera = false
     private var handPoseRequest = VNDetectHumanHandPoseRequest()
-    
+//    let uiframe =
     var body: some View {
         VStack {
+//            ZStack {
+//            FrameView(image: model.frame)
+//                .frame(width:UIScreen.main.bounds.width , height: UIScreen.main.bounds.height/3)
+//            ErrorView(error: model.error)
+//            }
             VStack {
+                
+//                Button("Classify live webcam") {classificationViewModel.classifyImage(tmpImage: UIImage(cgImage: model.frame!))
+}
+            ZStack {
                 Button("Select a picutre") {self.shouldPresentActionScheet = true}
                     .padding()
                     .sheet(isPresented: $shouldPresentImagePicker) {
@@ -37,6 +53,8 @@ struct ImagePickerView: View {
                             self.shouldPresentCamera = false
                         }), ActionSheet.Button.cancel()])
                     }
+                RoundedRectangle(cornerRadius: 15).foregroundColor(.gray).opacity(0.2).padding().frame(width: 200, height: 70)
+            }
                 
                 Image(uiImage: image!)
                     .resizable()
@@ -45,56 +63,56 @@ struct ImagePickerView: View {
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 4))
                     .shadow(radius: 10)
-                Spacer()
-                Button("Classify me") { classifyImage(tmpImage: image!) }
-                HStack {
-                    Text("\(name)")
-                    Text("\(classificationLabel)")
+            ZStack {
+            Button("Classify!") { classificationViewModel.classifyImage(tmpImage: image!)
+                print(classificationViewModel.classificationLabel)
+            }
+                RoundedRectangle(cornerRadius: 15).foregroundColor(.gray).opacity(0.2).padding().frame(width: 120, height: 70)
+
+            }
+            HStack {
+                ZStack {
+                    if classificationViewModel.name != "" && classificationViewModel.name.count < 10 {
+                Text(classificationViewModel.name)
+                RoundedRectangle(cornerRadius: 10)
+                        .padding()
+                        .foregroundColor(.gray)
+                        .opacity(0.2)
+                        .frame(width: 100, height: 100)
+
+                    }
+                    
+                    if classificationViewModel.name.count > 10  {
+                Text(classificationViewModel.name)
+                RoundedRectangle(cornerRadius: 10)
+                        .padding()
+                        .foregroundColor(.gray)
+                        .opacity(0.2)
+                        .frame(width: 300, height: 100)
+
+                    }
+
                 }
+                    
+                ZStack {
+                    if classificationViewModel.classificationLabel != "" {
+
+                Text(classificationViewModel.classificationLabel)
+                RoundedRectangle(cornerRadius: 10)
+                        .padding()
+                        .foregroundColor(.gray)
+                        .opacity(0.2)
+                        .frame(width: 100, height: 100)
+                    
+                }
+                }
+
+            }
+            .padding()
                 Spacer()
             }
         }
     }
-    private func classifyImage(tmpImage: UIImage) {
-        let image = tmpImage
-        let resizedImage = image.resizeImageTo(size: CGSize(width: 224, height: 224))
-        let buffer = resizedImage?.convertToBuffer()
-        if buffer == nil {
-            print("Buffer is empty")
-            return
-        }
-        //How many hands to detect
-        handPoseRequest.maximumHandCount = 1
-        guard let imageData = image.jpegData(compressionQuality: 0) else {
-            return
-        }
-        let handler = VNImageRequestHandler(data: imageData, options: [:])
-        do {
-            // Perform VNDetectHumanHandPoseRequest
-            try handler.perform([handPoseRequest])
-            // Continue only when a hand was detected in the frame.
-            // Since we set the maximumHandCount property of the request to 1, there will be at most one observation.
-            var prediction: String = ""
-            let observation = handPoseRequest.results?.first
-            if observation == nil {name = "The slected picture is not valid"
-                classificationLabel = ""
-                
-            }
-            guard let keypointsMultiArray = try? observation?.keypointsMultiArray() else {
-                name = "The slected picture is not valid"
-                classificationLabel =  ""
-                return }
-            let handPosePrediction = try model.prediction(poses: keypointsMultiArray)
-            let confidence = handPosePrediction.labelProbabilities[handPosePrediction.label]!
-            prediction = handPosePrediction.label
-            classificationLabel = "\(confidence)"
-            name = "\(prediction)"
-            print(confidence)
-        } catch {
-            print("Error")
-        }
-    }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

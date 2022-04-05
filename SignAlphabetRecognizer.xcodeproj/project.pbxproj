@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710ABA5727FB1C8C0056DDAC /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ABA5627FB1C8C0056DDAC /* CameraManager.swift */; };
+		710ABA5927FB1F340056DDAC /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ABA5827FB1F340056DDAC /* FrameManager.swift */; };
+		710ABA5B27FB1FB50056DDAC /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ABA5A27FB1FB50056DDAC /* ContentViewModel.swift */; };
+		710ABA5D27FB21310056DDAC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ABA5C27FB21310056DDAC /* ErrorView.swift */; };
+		710ABA5F27FB21670056DDAC /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ABA5E27FB21670056DDAC /* CameraError.swift */; };
+		710ABA6327FB2AF90056DDAC /* CGImage Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ABA6227FB2AF90056DDAC /* CGImage Extension.swift */; };
+		710ABA6527FB2F4F0056DDAC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ABA6427FB2F4F0056DDAC /* HomeView.swift */; };
+		710ABA6727FB33D70056DDAC /* LiveCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ABA6627FB33D70056DDAC /* LiveCameraView.swift */; };
+		710ABA6927FB33F10056DDAC /* ClassificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ABA6827FB33F10056DDAC /* ClassificationViewModel.swift */; };
+		710ABA6B27FB45E90056DDAC /* FloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ABA6A27FB45E90056DDAC /* FloatExtension.swift */; };
+		7126079327FB1A9A0083BAC7 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7126079227FB1A9A0083BAC7 /* FrameView.swift */; };
 		718E55AA27F4A97500FB482C /* SignAlphabetRecognizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55A927F4A97500FB482C /* SignAlphabetRecognizerApp.swift */; };
 		718E55AC27F4A97500FB482C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55AB27F4A97500FB482C /* ContentView.swift */; };
 		718E55AE27F4A97600FB482C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718E55AD27F4A97600FB482C /* Assets.xcassets */; };
@@ -38,6 +49,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		710ABA5627FB1C8C0056DDAC /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		710ABA5827FB1F340056DDAC /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
+		710ABA5A27FB1FB50056DDAC /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		710ABA5C27FB21310056DDAC /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		710ABA5E27FB21670056DDAC /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		710ABA6227FB2AF90056DDAC /* CGImage Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage Extension.swift"; sourceTree = "<group>"; };
+		710ABA6427FB2F4F0056DDAC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		710ABA6627FB33D70056DDAC /* LiveCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCameraView.swift; sourceTree = "<group>"; };
+		710ABA6827FB33F10056DDAC /* ClassificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationViewModel.swift; sourceTree = "<group>"; };
+		710ABA6A27FB45E90056DDAC /* FloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExtension.swift; sourceTree = "<group>"; };
+		7126079227FB1A9A0083BAC7 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 		718E55A627F4A97500FB482C /* SignAlphabetRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignAlphabetRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718E55A927F4A97500FB482C /* SignAlphabetRecognizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAlphabetRecognizerApp.swift; sourceTree = "<group>"; };
 		718E55AB27F4A97500FB482C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +104,7 @@
 		718E559D27F4A97400FB482C = {
 			isa = PBXGroup;
 			children = (
+				710ABA6227FB2AF90056DDAC /* CGImage Extension.swift */,
 				718E55A827F4A97500FB482C /* SignAlphabetRecognizer */,
 				718E55B927F4A97600FB482C /* SignAlphabetRecognizerTests */,
 				718E55C327F4A97600FB482C /* SignAlphabetRecognizerUITests */,
@@ -106,8 +129,18 @@
 				718E55AB27F4A97500FB482C /* ContentView.swift */,
 				718E55DF27F58AAC00FB482C /* SUImagePicker.swift */,
 				718E55DD27F4B19D00FB482C /* ImagePickerView.swift */,
+				710ABA6627FB33D70056DDAC /* LiveCameraView.swift */,
+				710ABA6827FB33F10056DDAC /* ClassificationViewModel.swift */,
+				710ABA5C27FB21310056DDAC /* ErrorView.swift */,
+				710ABA5E27FB21670056DDAC /* CameraError.swift */,
 				71AD3BFB27F7414B000571FB /* SignAlphabet.mlpackage */,
+				710ABA6A27FB45E90056DDAC /* FloatExtension.swift */,
 				718E55E127F58C9600FB482C /* UIImage+Resize+CVPixelBuffer .swift */,
+				7126079227FB1A9A0083BAC7 /* FrameView.swift */,
+				710ABA5827FB1F340056DDAC /* FrameManager.swift */,
+				710ABA5627FB1C8C0056DDAC /* CameraManager.swift */,
+				710ABA5A27FB1FB50056DDAC /* ContentViewModel.swift */,
+				710ABA6427FB2F4F0056DDAC /* HomeView.swift */,
 				718E55AD27F4A97600FB482C /* Assets.xcassets */,
 				718E55AF27F4A97600FB482C /* Preview Content */,
 			);
@@ -269,12 +302,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				710ABA6927FB33F10056DDAC /* ClassificationViewModel.swift in Sources */,
+				710ABA6B27FB45E90056DDAC /* FloatExtension.swift in Sources */,
 				718E55E227F58C9600FB482C /* UIImage+Resize+CVPixelBuffer .swift in Sources */,
+				710ABA6527FB2F4F0056DDAC /* HomeView.swift in Sources */,
 				718E55AC27F4A97500FB482C /* ContentView.swift in Sources */,
+				710ABA5727FB1C8C0056DDAC /* CameraManager.swift in Sources */,
 				718E55AA27F4A97500FB482C /* SignAlphabetRecognizerApp.swift in Sources */,
+				710ABA6727FB33D70056DDAC /* LiveCameraView.swift in Sources */,
+				710ABA5B27FB1FB50056DDAC /* ContentViewModel.swift in Sources */,
+				710ABA6327FB2AF90056DDAC /* CGImage Extension.swift in Sources */,
 				71AD3BFC27F7414B000571FB /* SignAlphabet.mlpackage in Sources */,
 				718E55DE27F4B19D00FB482C /* ImagePickerView.swift in Sources */,
+				7126079327FB1A9A0083BAC7 /* FrameView.swift in Sources */,
+				710ABA5927FB1F340056DDAC /* FrameManager.swift in Sources */,
 				718E55E027F58AAC00FB482C /* SUImagePicker.swift in Sources */,
+				710ABA5D27FB21310056DDAC /* ErrorView.swift in Sources */,
+				710ABA5F27FB21670056DDAC /* CameraError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

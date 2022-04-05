@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct SignAlphabetRecognizerApp: App {
+    var classificationViewModel = ClassificationViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ImagePickerView()
+            HomeView()
+                .accentColor(.mint)
+                .environmentObject(classificationViewModel)
+
         }
+
     }
 }
