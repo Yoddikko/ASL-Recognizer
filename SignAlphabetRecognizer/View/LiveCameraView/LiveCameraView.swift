@@ -11,20 +11,22 @@ struct LiveCameraView: View {
     @StateObject private var model = ContentViewModel()
     
     @EnvironmentObject var classificationViewModel: ClassificationViewModel
-
+    
     var truevar = true
     var body: some View {
         
         VStack {
             ZStack {
                 FrameView(image: model.frame)
+                    .ignoresSafeArea()
                 ErrorView(error: model.error)
             }
             VStack {
                 ZStack {
-                    Button("Classify!") {if model.frame != nil {classificationViewModel.classifyImage(tmpImage: UIImage(cgImage: model.frame!))
-                        classificationViewModel.onLoop = true
+                    Button(classificationViewModel.onLoop == false ? "Start live classifying!" : "Stop live classifying!") {if model.frame != nil {classificationViewModel.classifyImage(tmpImage: UIImage(cgImage: model.frame!))
+                        classificationViewModel.onLoop.toggle()
                         classificationViewModel.callFunc()
+                        classificationViewModel.text = ""
                     }
 
                     }
@@ -52,7 +54,7 @@ struct LiveCameraView: View {
 
                         }
                         
-                        if classificationViewModel.name.count > 10  {
+                        if classificationViewModel.name.count > 10 && classificationViewModel.onLoop  {
                     Text(classificationViewModel.name)
                     RoundedRectangle(cornerRadius: 10)
                             .padding()
@@ -76,9 +78,17 @@ struct LiveCameraView: View {
                         
                     }
                     }
+                    
 
                 }
                 .padding()
+                if classificationViewModel.onLoop {
+                    VStack {
+                            Text("Output: \(classificationViewModel.text)")
+                       
+                    }
+                }
+
             }
         }.navigationBarTitleDisplayMode(.inline)
     }

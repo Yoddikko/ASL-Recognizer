@@ -19,7 +19,7 @@ private var model = ContentViewModel()
     
     @Published var classificationLabel: String = ""
     @Published var name: String = ""
-        
+    @Published var text: String = ""
     var onLoop = false
     let mlmodel = SignAlphabet()
     
@@ -66,6 +66,18 @@ private var model = ContentViewModel()
             name = "\(prediction)"
             print(prediction)
             print(confidence)
+            if confidence > 0.8 && name != "del" && name != "space" && name != "nothing" {
+                text.append(prediction)
+                print (text)
+            }
+            if confidence > 0.8 && name == "del" {
+                text.removeLast()
+            }
+            
+            if confidence > 0.8 && name == "space" {
+                text.append(" ")
+            }
+
         } catch {
             print("Error")
         }
@@ -73,13 +85,13 @@ private var model = ContentViewModel()
 
     func callFunc() {
         if onLoop {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
                 if model.frame != nil {
                     classifyImage(tmpImage: UIImage(cgImage: model.frame!))
-                
-                callFunc()
+                    if onLoop {callFunc()}
                 }
             }
+            print("DENTRO")
         } else {
             return
         }

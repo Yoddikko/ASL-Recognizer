@@ -531,7 +531,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = alex.SignAlphabetRecognizer;
+				PRODUCT_BUNDLE_IDENTIFIER = ale.SignAlphabetRecognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -563,7 +563,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = alex.SignAlphabetRecognizer;
+				PRODUCT_BUNDLE_IDENTIFIER = ale.SignAlphabetRecognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
