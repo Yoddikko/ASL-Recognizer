@@ -19,6 +19,8 @@ private var model = ContentViewModel()
     
     @Published var classificationLabel: String = ""
     @Published var name: String = ""
+        
+    var onLoop = false
     let mlmodel = SignAlphabet()
     
     @Published private var image: UIImage? = UIImage(named: "prova")
@@ -70,15 +72,18 @@ private var model = ContentViewModel()
     }
 
     func callFunc() {
-      DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
-          if model.frame != nil {
-          classifyImage(tmpImage: UIImage(cgImage: model.frame!))
-          }
-          callFunc()
-      }
+        if onLoop {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+                if model.frame != nil {
+                    classifyImage(tmpImage: UIImage(cgImage: model.frame!))
+                
+                callFunc()
+                }
+            }
+        } else {
+            return
+        }
     }
-
+    
+    
 }
-
-
-
