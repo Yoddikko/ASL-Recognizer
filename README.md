@@ -16,7 +16,8 @@ I used AVFoundation as the first framework to start recording in real time and r
 ![frameworks 001](https://user-images.githubusercontent.com/92546954/161830210-2d2e61e1-f042-4be1-b0d7-22e2a63a925f.png)
 
 ##### Demo of the app
-![ezgif com-gif-maker-2](https://user-images.githubusercontent.com/92546954/161830773-4837eb76-475b-450e-8c47-1b56683fde67.gif)
+<img src="https://user-images.githubusercontent.com/92546954/161830773-4837eb76-475b-450e-8c47-1b56683fde67.gif" width="48">
+
 ![IMG_0127 PNG](https://user-images.githubusercontent.com/92546954/161830824-d5ae22e7-25ca-4be7-a547-68792164abe2.png)
 ![IMG_0128 PNG](https://user-images.githubusercontent.com/92546954/161830830-3f3b9f53-c9f5-412f-9d41-1ad1ccf09dff.png)
 
