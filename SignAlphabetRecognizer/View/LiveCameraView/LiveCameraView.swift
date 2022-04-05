@@ -22,16 +22,20 @@ struct LiveCameraView: View {
             }
             VStack {
                 ZStack {
-                    Button("Classify!") {if model.frame != nil {classificationViewModel.classifyImage(tmpImage: UIImage(cgImage: model.frame!))}}
-                    RoundedRectangle(cornerRadius: 15)
-                        .foregroundColor(.gray)
-                        .opacity(0.2)
-                        .frame(width: 200, height: 30)
+                    Button("Classify!") {if model.frame != nil {classificationViewModel.classifyImage(tmpImage: UIImage(cgImage: model.frame!))
+                        
+                    }
+                        classificationViewModel.callFunc()
+
+                    }
                         .onAppear{
                             classificationViewModel.classificationLabel = ""
                             classificationViewModel.name = ""
                         }
-                    
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(.gray)
+                        .opacity(0.2)
+                        .frame(width: 200, height: 30)
                 }
                 HStack {
                     ZStack {

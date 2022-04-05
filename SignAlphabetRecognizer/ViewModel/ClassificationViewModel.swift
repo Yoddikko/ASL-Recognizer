@@ -14,17 +14,17 @@ import SwiftUI
 
 class ClassificationViewModel: ObservableObject {
     
-    @StateObject private var model = ContentViewModel()
+private var model = ContentViewModel()
     
     
     @Published var classificationLabel: String = ""
     @Published var name: String = ""
     let mlmodel = SignAlphabet()
     
-    @State private var image: UIImage? = UIImage(named: "prova")
-    @State private var shouldPresentImagePicker = false
-    @State private var shouldPresentActionScheet = false
-    @State private var shouldPresentCamera = false
+    @Published private var image: UIImage? = UIImage(named: "prova")
+    @Published private var shouldPresentImagePicker = false
+    @Published private var shouldPresentActionScheet = false
+    @Published private var shouldPresentCamera = false
     private var handPoseRequest = VNDetectHumanHandPoseRequest()
 
     func classifyImage(tmpImage: UIImage) {
@@ -59,7 +59,7 @@ class ClassificationViewModel: ObservableObject {
             let handPosePrediction = try mlmodel.prediction(poses: keypointsMultiArray)
             let confidence = handPosePrediction.labelProbabilities[handPosePrediction.label]!
             prediction = handPosePrediction.label
-            var shortConfidence = confidence.format(f: ".3")
+            let shortConfidence = confidence.format(f: ".3")
             classificationLabel = "\(shortConfidence)"
             name = "\(prediction)"
             print(prediction)
@@ -68,6 +68,16 @@ class ClassificationViewModel: ObservableObject {
             print("Error")
         }
     }
+
+    func callFunc() {
+      DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+          if model.frame != nil {
+          classifyImage(tmpImage: UIImage(cgImage: model.frame!))
+          }
+          callFunc()
+      }
+    }
+
 }
 
 

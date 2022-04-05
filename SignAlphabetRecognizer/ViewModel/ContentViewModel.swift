@@ -6,10 +6,14 @@
 //
 
 import CoreImage
+import SwiftUI
+
+
 
 class ContentViewModel: ObservableObject {
   @Published var error: Error?
   @Published var frame: CGImage?
+@EnvironmentObject var classificationViewModel: ClassificationViewModel
 
   var comicFilter = false
   var monoFilter = false
@@ -39,7 +43,7 @@ class ContentViewModel: ObservableObject {
         }
 
         var ciImage = CIImage(cgImage: image)
-
+//        classificationViewModel.classifyImage(tmpImage: UIImage(cgImage: image)) //QUAAAAAA
         if self.comicFilter {
           ciImage = ciImage.applyingFilter("CIComicEffect")
         }

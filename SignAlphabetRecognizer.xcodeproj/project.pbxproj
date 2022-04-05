@@ -19,7 +19,6 @@
 		710ABA6B27FB45E90056DDAC /* FloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ABA6A27FB45E90056DDAC /* FloatExtension.swift */; };
 		7126079327FB1A9A0083BAC7 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7126079227FB1A9A0083BAC7 /* FrameView.swift */; };
 		718E55AA27F4A97500FB482C /* SignAlphabetRecognizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55A927F4A97500FB482C /* SignAlphabetRecognizerApp.swift */; };
-		718E55AC27F4A97500FB482C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55AB27F4A97500FB482C /* ContentView.swift */; };
 		718E55AE27F4A97600FB482C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718E55AD27F4A97600FB482C /* Assets.xcassets */; };
 		718E55B127F4A97600FB482C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718E55B027F4A97600FB482C /* Preview Assets.xcassets */; };
 		718E55BB27F4A97600FB482C /* SignAlphabetRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E55BA27F4A97600FB482C /* SignAlphabetRecognizerTests.swift */; };
@@ -62,7 +61,6 @@
 		7126079227FB1A9A0083BAC7 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 		718E55A627F4A97500FB482C /* SignAlphabetRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignAlphabetRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718E55A927F4A97500FB482C /* SignAlphabetRecognizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAlphabetRecognizerApp.swift; sourceTree = "<group>"; };
-		718E55AB27F4A97500FB482C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		718E55AD27F4A97600FB482C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		718E55B027F4A97600FB482C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		718E55B627F4A97600FB482C /* SignAlphabetRecognizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignAlphabetRecognizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +99,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		710ABA6C27FC70F80056DDAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				710ABA7127FC714B0056DDAC /* ErrorView */,
+				710ABA6427FB2F4F0056DDAC /* HomeView.swift */,
+				718E55DD27F4B19D00FB482C /* ImagePickerView.swift */,
+				710ABA7227FC71700056DDAC /* LiveCameraView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		710ABA6E27FC71100056DDAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				718E55DF27F58AAC00FB482C /* SUImagePicker.swift */,
+				710ABA5627FB1C8C0056DDAC /* CameraManager.swift */,
+				710ABA5827FB1F340056DDAC /* FrameManager.swift */,
+				710ABA5A27FB1FB50056DDAC /* ContentViewModel.swift */,
+				710ABA6827FB33F10056DDAC /* ClassificationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		710ABA7027FC713A0056DDAC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				718E55E127F58C9600FB482C /* UIImage+Resize+CVPixelBuffer .swift */,
+				710ABA6A27FB45E90056DDAC /* FloatExtension.swift */,
+				710ABA6227FB2AF90056DDAC /* CGImage Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		710ABA7127FC714B0056DDAC /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				710ABA5C27FB21310056DDAC /* ErrorView.swift */,
+				710ABA5E27FB21670056DDAC /* CameraError.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		710ABA7227FC71700056DDAC /* LiveCameraView */ = {
+			isa = PBXGroup;
+			children = (
+				7126079227FB1A9A0083BAC7 /* FrameView.swift */,
+				710ABA6627FB33D70056DDAC /* LiveCameraView.swift */,
+			);
+			path = LiveCameraView;
+			sourceTree = "<group>";
+		};
 		718E559D27F4A97400FB482C = {
 			isa = PBXGroup;
 			children = (
@@ -124,23 +173,11 @@
 		718E55A827F4A97500FB482C /* SignAlphabetRecognizer */ = {
 			isa = PBXGroup;
 			children = (
-				710ABA6227FB2AF90056DDAC /* CGImage Extension.swift */,
 				718E55A927F4A97500FB482C /* SignAlphabetRecognizerApp.swift */,
-				718E55AB27F4A97500FB482C /* ContentView.swift */,
-				718E55DF27F58AAC00FB482C /* SUImagePicker.swift */,
-				718E55DD27F4B19D00FB482C /* ImagePickerView.swift */,
-				710ABA6627FB33D70056DDAC /* LiveCameraView.swift */,
-				710ABA6827FB33F10056DDAC /* ClassificationViewModel.swift */,
-				710ABA5C27FB21310056DDAC /* ErrorView.swift */,
-				710ABA5E27FB21670056DDAC /* CameraError.swift */,
 				71AD3BFB27F7414B000571FB /* SignAlphabet.mlpackage */,
-				710ABA6A27FB45E90056DDAC /* FloatExtension.swift */,
-				718E55E127F58C9600FB482C /* UIImage+Resize+CVPixelBuffer .swift */,
-				7126079227FB1A9A0083BAC7 /* FrameView.swift */,
-				710ABA5827FB1F340056DDAC /* FrameManager.swift */,
-				710ABA5627FB1C8C0056DDAC /* CameraManager.swift */,
-				710ABA5A27FB1FB50056DDAC /* ContentViewModel.swift */,
-				710ABA6427FB2F4F0056DDAC /* HomeView.swift */,
+				710ABA7027FC713A0056DDAC /* Extensions */,
+				710ABA6E27FC71100056DDAC /* ViewModel */,
+				710ABA6C27FC70F80056DDAC /* View */,
 				718E55AD27F4A97600FB482C /* Assets.xcassets */,
 				718E55AF27F4A97600FB482C /* Preview Content */,
 			);
@@ -306,7 +343,6 @@
 				710ABA6B27FB45E90056DDAC /* FloatExtension.swift in Sources */,
 				718E55E227F58C9600FB482C /* UIImage+Resize+CVPixelBuffer .swift in Sources */,
 				710ABA6527FB2F4F0056DDAC /* HomeView.swift in Sources */,
-				718E55AC27F4A97500FB482C /* ContentView.swift in Sources */,
 				710ABA5727FB1C8C0056DDAC /* CameraManager.swift in Sources */,
 				718E55AA27F4A97500FB482C /* SignAlphabetRecognizerApp.swift in Sources */,
 				710ABA6727FB33D70056DDAC /* LiveCameraView.swift in Sources */,
@@ -486,19 +522,20 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = alex.SignAlphabetRecognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -517,19 +554,20 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = alex.SignAlphabetRecognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
