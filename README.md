@@ -1,7 +1,7 @@
 # ASL Recognizer
 ## A simple app that analyses and recognises the alphabet in sign language using machine learning
 [Notion link](https://www.notion.so/appledeveloperacademyunina/arg-ASL-Recognizer-c879fa5931e34f8cbfce5a24774c98c1)
-
+TestFlight link : Soon
 I trained the model with [this](https://www.kaggle.com/datasets/grassknoted/asl-alphabet) dataset of about 80,000 images depicting the american alphabet in sign language.
 The computer trained the model for about 24h and I got pretty accurate results. 
 <img width="925" alt="Schermata 2022-04-01 alle 16 41 43" src="https://user-images.githubusercontent.com/92546954/161829153-35933803-1eff-422e-b331-0bca2efbe7b6.png">
