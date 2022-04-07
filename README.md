@@ -4,6 +4,9 @@
 
 TestFlight link : Soon
 
+![asl cover](https://user-images.githubusercontent.com/92546954/162177681-798f751b-c5d1-449f-973b-15893edb17aa.png)
+
+
 I trained the model with [this](https://www.kaggle.com/datasets/grassknoted/asl-alphabet) dataset of about 80,000 images depicting the american alphabet in sign language.
 The computer trained the model for about 24h and I got pretty accurate results. 
 <img width="925" alt="Schermata 2022-04-01 alle 16 41 43" src="https://user-images.githubusercontent.com/92546954/161829153-35933803-1eff-422e-b331-0bca2efbe7b6.png">
