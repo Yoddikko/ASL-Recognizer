@@ -1,8 +1,7 @@
 # ASL Recognizer
 ## A simple app that analyses and recognises the alphabet in sign language using machine learning
 [Notion link](https://www.notion.so/appledeveloperacademyunina/arg-ASL-Recognizer-c879fa5931e34f8cbfce5a24774c98c1)
-
-TestFlight link : Soon
+[TestFlight link](https://testflight.apple.com/join/BIrexCMq)
 
 ![asl cover](https://user-images.githubusercontent.com/92546954/162177681-798f751b-c5d1-449f-973b-15893edb17aa.png)
 
