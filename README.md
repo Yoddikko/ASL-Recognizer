@@ -24,5 +24,9 @@ I used AVFoundation as the first framework to start recording in real time and r
 
 
 
+![ASL RECOGNIZER 001](https://user-images.githubusercontent.com/92546954/163158793-3627bbc2-2ffc-4fb1-a2a9-664736d00b9f.png)
+
+
+
 ##### Logo
 <img src="https://user-images.githubusercontent.com/92546954/161830840-5317e76a-1109-4ceb-9f61-6e949c498a8d.png" width="300">
