@@ -7,7 +7,7 @@ import Foundation
 import UIKit
 
 extension UIImage {
-    
+    ///Function to resize image to a certain XGSize
     func resizeImageTo(size: CGSize) -> UIImage? {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
@@ -18,7 +18,6 @@ extension UIImage {
     }
     
      func convertToBuffer() -> CVPixelBuffer? {
-        
         let attributes = [
             kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue,
             kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue
