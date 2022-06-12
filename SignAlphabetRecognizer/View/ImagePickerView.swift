@@ -15,11 +15,11 @@ import CoreImage
 struct ImagePickerView: View {
     
     @EnvironmentObject var classificationViewModel: ClassificationViewModel
-
+    
     var localClassificationLabel = ""
     
-//    @State private var classificationLabel: String = ""
-//    @State private var name: String = ""
+    //    @State private var classificationLabel: String = ""
+    //    @State private var name: String = ""
     let mlmodel = SignAlphabet()
     
     @State private var image: UIImage? = UIImage(named: "prova")
@@ -27,18 +27,9 @@ struct ImagePickerView: View {
     @State private var shouldPresentActionScheet = false
     @State private var shouldPresentCamera = false
     private var handPoseRequest = VNDetectHumanHandPoseRequest()
-//    let uiframe =
+    //    let uiframe =
     var body: some View {
         VStack {
-//            ZStack {
-//            FrameView(image: model.frame)
-//                .frame(width:UIScreen.main.bounds.width , height: UIScreen.main.bounds.height/3)
-//            ErrorView(error: model.error)
-//            }
-            VStack {
-                
-//                Button("Classify live webcam") {classificationViewModel.classifyImage(tmpImage: UIImage(cgImage: model.frame!))
-}
             ZStack {
                 Button("Select a picutre") {self.shouldPresentActionScheet = true}
                     .padding()
@@ -55,68 +46,68 @@ struct ImagePickerView: View {
                     }
                 RoundedRectangle(cornerRadius: 15).foregroundColor(.gray).opacity(0.2).padding().frame(width: 200, height: 70)
             }
-                
-                Image(uiImage: image!)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 300, height: 300)
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                    .shadow(radius: 10)
+            
+            Image(uiImage: image!)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 300, height: 300)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                .shadow(radius: 10)
             ZStack {
-            Button("Classify!") { classificationViewModel.classifyImage(tmpImage: image!)
-                print(classificationViewModel.classificationLabel)
-            }
-            .onAppear{
-                classificationViewModel.classificationLabel = ""
-                classificationViewModel.name = ""
-            }
+                Button("Classify!") { classificationViewModel.classifyImage(tmpImage: image!)
+                    print(classificationViewModel.classificationLabel)
+                }
+                .onAppear{
+                    classificationViewModel.classificationLabel = ""
+                    classificationViewModel.name = ""
+                }
                 RoundedRectangle(cornerRadius: 15).foregroundColor(.gray).opacity(0.2).padding().frame(width: 120, height: 70)
-
+                
             }
             HStack {
                 ZStack {
                     if classificationViewModel.name != "" && classificationViewModel.name.count < 10 {
-                Text(classificationViewModel.name)
-                RoundedRectangle(cornerRadius: 10)
-                        .padding()
-                        .foregroundColor(.gray)
-                        .opacity(0.2)
-                        .frame(width: 100, height: 100)
-
+                        Text(classificationViewModel.name)
+                        RoundedRectangle(cornerRadius: 10)
+                            .padding()
+                            .foregroundColor(.gray)
+                            .opacity(0.2)
+                            .frame(width: 100, height: 100)
+                        
                     }
                     
                     if classificationViewModel.name.count > 10  {
-                Text(classificationViewModel.name)
-                RoundedRectangle(cornerRadius: 10)
-                        .padding()
-                        .foregroundColor(.gray)
-                        .opacity(0.2)
-                        .frame(width: 300, height: 100)
-
+                        Text(classificationViewModel.name)
+                        RoundedRectangle(cornerRadius: 10)
+                            .padding()
+                            .foregroundColor(.gray)
+                            .opacity(0.2)
+                            .frame(width: 300, height: 100)
+                        
                     }
-
-                }
                     
+                }
+                
                 ZStack {
                     if classificationViewModel.classificationLabel != "" {
-
-                Text(classificationViewModel.classificationLabel)
-                RoundedRectangle(cornerRadius: 10)
-                        .padding()
-                        .foregroundColor(.gray)
-                        .opacity(0.2)
-                        .frame(width: 100, height: 100)
-                    
+                        
+                        Text(classificationViewModel.classificationLabel)
+                        RoundedRectangle(cornerRadius: 10)
+                            .padding()
+                            .foregroundColor(.gray)
+                            .opacity(0.2)
+                            .frame(width: 100, height: 100)
+                        
+                    }
                 }
-                }
-
+                
             }
             .padding()
-                Spacer()
-            }
+            Spacer()
         }
     }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

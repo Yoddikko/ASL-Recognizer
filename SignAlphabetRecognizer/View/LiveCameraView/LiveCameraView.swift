@@ -28,15 +28,15 @@ struct LiveCameraView: View {
                         classificationViewModel.callFunc()
                         classificationViewModel.text = ""
                     }
-
+                        
                     }
-                        .onAppear{
-                            classificationViewModel.classificationLabel = ""
-                            classificationViewModel.name = ""
-                        }
-                        .onDisappear{
-                            classificationViewModel.onLoop = false
-                        }
+                    .onAppear{
+                        classificationViewModel.classificationLabel = ""
+                        classificationViewModel.name = ""
+                    }
+                    .onDisappear{
+                        classificationViewModel.onLoop = false
+                    }
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundColor(.gray)
                         .opacity(0.2)
@@ -45,50 +45,50 @@ struct LiveCameraView: View {
                 HStack {
                     ZStack {
                         if classificationViewModel.name != "" && classificationViewModel.name.count < 10 {
-                    Text(classificationViewModel.name)
-                    RoundedRectangle(cornerRadius: 10)
-                            .padding()
-                            .foregroundColor(.gray)
-                            .opacity(0.2)
-                            .frame(width: 100, height: 100)
-
+                            Text(classificationViewModel.name)
+                            RoundedRectangle(cornerRadius: 10)
+                                .padding()
+                                .foregroundColor(.gray)
+                                .opacity(0.2)
+                                .frame(width: 100, height: 100)
+                            
                         }
                         
                         if classificationViewModel.name.count > 10 && classificationViewModel.onLoop  {
-                    Text(classificationViewModel.name)
-                    RoundedRectangle(cornerRadius: 10)
-                            .padding()
-                            .foregroundColor(.gray)
-                            .opacity(0.2)
-                            .frame(width: 300, height: 100)
-
+                            Text(classificationViewModel.name)
+                            RoundedRectangle(cornerRadius: 10)
+                                .padding()
+                                .foregroundColor(.gray)
+                                .opacity(0.2)
+                                .frame(width: 300, height: 100)
+                            
                         }
-
-                    }
                         
-                    ZStack {
-                        if classificationViewModel.classificationLabel != "" {
-
-                    Text(classificationViewModel.classificationLabel)
-                    RoundedRectangle(cornerRadius: 10)
-                            .padding()
-                            .foregroundColor(.gray)
-                            .opacity(0.2)
-                            .frame(width: 100, height: 100)
-                        
-                    }
                     }
                     
-
+                    ZStack {
+                        if classificationViewModel.classificationLabel != "" {
+                            
+                            Text(classificationViewModel.classificationLabel)
+                            RoundedRectangle(cornerRadius: 10)
+                                .padding()
+                                .foregroundColor(.gray)
+                                .opacity(0.2)
+                                .frame(width: 100, height: 100)
+                            
+                        }
+                    }
+                    
+                    
                 }
                 .padding()
                 if classificationViewModel.onLoop {
                     VStack {
-                            Text("Output: \(classificationViewModel.text)")
-                       
+                        Text("Output: \(classificationViewModel.text)")
+                        
                     }
                 }
-
+                
             }
         }.navigationBarTitleDisplayMode(.inline)
     }

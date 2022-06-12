@@ -12,12 +12,11 @@ struct SignAlphabetRecognizerApp: App {
     var classificationViewModel = ClassificationViewModel()
     var body: some Scene {
         WindowGroup {
-//            ImagePickerView()
             HomeView()
                 .accentColor(.mint)
                 .environmentObject(classificationViewModel)
-
+            
         }
-
+        
     }
 }

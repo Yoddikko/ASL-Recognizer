@@ -14,7 +14,7 @@ import SwiftUI
 
 class ClassificationViewModel: ObservableObject {
     
-private var model = ContentViewModel()
+    private var model = ContentViewModel()
     
     
     @Published var classificationLabel: String = ""
@@ -28,7 +28,7 @@ private var model = ContentViewModel()
     @Published private var shouldPresentActionScheet = false
     @Published private var shouldPresentCamera = false
     private var handPoseRequest = VNDetectHumanHandPoseRequest()
-
+    
     func classifyImage(tmpImage: UIImage) {
         let image = tmpImage
         let resizedImage = image.resizeImageTo(size: CGSize(width: 224, height: 224))
@@ -77,12 +77,12 @@ private var model = ContentViewModel()
             if confidence > 0.8 && name == "space" {
                 text.append(" ")
             }
-
+            
         } catch {
             print("Error")
         }
     }
-
+    
     func callFunc() {
         if onLoop {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in

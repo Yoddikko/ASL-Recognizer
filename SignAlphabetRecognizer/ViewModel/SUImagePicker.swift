@@ -1,11 +1,3 @@
-//
-//  UIViewControllerRepresentable.swift
-//  SignAlphabetRecognizer
-//
-//  Created by Alessio Iodice on 30/03/22.
-//
-
-import Foundation
 //https://betterprogramming.pub/how-to-pick-an-image-from-camera-or-photo-library-in-swiftui-a596a0a2ece
 //
 //  SUImagePickerView.swift
@@ -33,11 +25,11 @@ struct SUImagePickerView: UIViewControllerRepresentable {
         pickerController.delegate = context.coordinator
         return pickerController
     }
-
+    
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {
         // Nothing to update here
     }
-
+    
 }
 
 class ImagePickerViewCoordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {

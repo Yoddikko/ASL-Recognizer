@@ -37,8 +37,6 @@ extension FrameManager: AVCaptureVideoDataOutputSampleBufferDelegate {
     ) {
         if let buffer = sampleBuffer.imageBuffer {
             DispatchQueue.main.async {
-//                print("bella raga") //QUIIIIIII
-//                classificationViewModel.classifyImage(tmpImage: buffer.)
                 self.current = buffer
             }
         }
